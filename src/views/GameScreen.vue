@@ -4,10 +4,10 @@
         <div v-if="view==='question'" class="flex-column">
             <div v-if="questionDisplayMode === 'correct'" class="flex-column">
                 <img class="large-correct-symbol" src="@/assets/png/check.png">
-                <h4>Correct!</h4>
+                <h4>Richtig!</h4>
             </div>
             <div v-if="gamePhase==='intro'" class="flex-column">
-                <span> {{ largeCorrectText }}</span>
+                <span v-if="questionDisplayMode === 'correct'" > {{ largeCorrectText }}</span>
                 <div style="height:25px"></div>
                 <div v-if="questionDisplayMode === 'question'" class="basic-vertical-flex" style="gap: 10px">
                     <span  style="margin-left: 20px; margin-right: 20px" class="question-text"> {{leadingText}} </span>
@@ -28,12 +28,12 @@
                 <div style="height: 50px;"></div>
                 <button v-if="questionDisplayMode==='correct'"
                     class="confirm-button white-button"
-                    @click="advance">Continue
+                    @click="advance">Weiter
                 </button>
             </div>
             <div v-if="gamePhase==='game' && answerQuestionPhase ==='search'" class="flex-column">
                 <div style="height:25px"></div>
-                <span>Locate this in the</span>
+                <span>Finde das Objekt im...</span>
                 <br>
                 <span><b>{{eventList[currentEventIndex].physicalDirection}}</b></span>
                 <div style="height:25px"></div>
@@ -41,13 +41,13 @@
                 <div style="height: 50px;"></div>
                 <button 
                     class="confirm-button white-button"
-                    @click="found">Found it!
+                    @click="found">Gefunden!
                 </button>
             </div>
             <div v-if="gamePhase==='game' && answerQuestionPhase !== 'search'" class="flex-column">
                 <div class="basic-vertical-flex" style="gap: 10px; margin: 0 50px">
                     <h4 v-if="answerQuestionPhase==='question'" style="text-align: center;"> {{ eventList[currentEventIndex].closelookingPrompt }}</h4>
-                    <h4 v-if="answerQuestionPhase==='correct'" style="text-align: center;"> {{ eventList[currentEventIndex].closelookingFeedback }}</h4>
+                    <p v-if="answerQuestionPhase==='correct'" style="text-align: center;"> {{ eventList[currentEventIndex].closelookingFeedback }}</p>
                     <p v-if="answerQuestionPhase==='info'" style="text-align: center; white-space: pre-wrap;"> {{ eventList[currentEventIndex].closelookingMoreInfo }}</p>
                     <div v-if="answerQuestionPhase!=='info'" class="close-look-answer-list">
                         <AnswerOption 
@@ -62,13 +62,13 @@
                         <div style="height: 50px;"></div>
                         <button v-if="answerQuestionPhase==='correct'"
                             class="confirm-button white-button"
-                            @click="goToInfo">Next
+                            @click="goToInfo">Weiter
                         </button>
                     <div style="height: 50px;"></div>
                 </div>
                 <button v-if="answerQuestionPhase==='info'"
                     class="confirm-button white-button"
-                    @click="nextQuestion">Next Question
+                    @click="nextQuestion">Nächste Frage
                 </button>
                 </div>
             </div>
@@ -76,29 +76,29 @@
         <div v-if="view==='timeline'" class="flex-column">
             <div v-if="showTimelineIntro" class="home-dialog-base">
                 <div class="home-dialog-container">
-                    <h1>The timeline</h1>
-                    <span>Five objects in the galleries will help you to untangle Switzerland’s wonderful, complicated history.
-                        <br><br>Place them correctly on the timeline to find out more.</span>
+                    <h1>Zeitstrahl</h1>
+                    <span>Fünf Objekte in der Ausstellung werden dir helfen, die wunderbar komplizierte Geschichte zu ordnen.
+                        <br><br>Platziere das Object auf dem Zeitstrahl und finde mehr heraus.</span>
                     <button class="confirm-button black-button home-dialog-confirm" 
-                        @click="showTimelineIntro=false; showTimelinePopup=true">Continue</button>
+                        @click="showTimelineIntro=false; showTimelinePopup=true">Weiter</button>
                 </div>
             </div>
             <div v-if="!showTimelinePopup" class="timeline-header">
                 <img class="timeline-header-image" :src="'src/assets/jpg/' + eventList[currentEventIndex].thumbnailFileName">
                 <div class="timeline-header-text-area">
-                    <h5 style="text-align: left; margin: 10px 0">Round {{ currentEventIndex + 1 }}</h5>
+                    <h5 style="text-align: left; margin: 10px 0">Runde {{ currentEventIndex + 1 }}</h5>
                     <h3 style="text-align: left; margin: 10px 0;">{{ eventList[currentEventIndex].title }}</h3>
                 </div>
             </div>
             <div v-if="showTimelinePopup" class="timeline-popup-background">
                 <div class="timeline-popup-container">
-                    <h2 class="timeline-popup-round-text">Round {{ currentEventIndex + 1 }}</h2>
+                    <h2 class="timeline-popup-round-text">Runde {{ currentEventIndex + 1 }}</h2>
                     <img class="timeline-popup-img" :src="'src/assets/jpg/' + eventList[currentEventIndex].thumbnailFileName">
                     <h3 class="timeline-popup-text">{{ eventList[currentEventIndex].title }}</h3>
                     <p class="timeline-popup-text">{{ eventList[currentEventIndex].timelinePrompt }}</p>
                     <button class="confirm-button black-button timeline-popup-button"
                         @click="showTimelinePopup = false;">
-                        Place
+                        Platzieren
                     </button>
                 </div>
             </div>
@@ -128,14 +128,14 @@
     const router = useRouter();
 
     const firstQuestionOptions = ref([
-        { text: 'Swiss', correct: true, width: 175, answerIndex: 0, forceClass: '' },
-        { text: 'Spanish', correct: true, width: 175, answerIndex: 1, forceClass: '' },
-        { text: 'German', correct: false, width: 175, answerIndex: 2, forceClass: '' },
-        { text: 'English', correct: false, width: 175, answerIndex: 3, forceClass: '' },
-        { text: 'Romansch', correct: false, width: 175, answerIndex: 4, forceClass: '' },
-        { text: 'French', correct: true, width: 175, answerIndex: 5, forceClass: '' },
-        { text: 'Icelandic', correct: true, width: 175, answerIndex: 6, forceClass: '' },
-        { text: 'Italian', correct: false, width: 175, answerIndex: 7, forceClass: '' },
+        { text: 'Schweizerdeutsch', correct: false, width: 175, answerIndex: 0, forceClass: '' },
+        { text: 'Deutsch', correct: true, width: 175, answerIndex: 1, forceClass: '' },
+        { text: 'Französisch', correct: true, width: 175, answerIndex: 2, forceClass: '' },
+        { text: 'Englisch', correct: false, width: 175, answerIndex: 3, forceClass: '' },
+        { text: 'Spanisch', correct: false, width: 175, answerIndex: 4, forceClass: '' },
+        { text: 'Rätoromanisch', correct: true, width: 175, answerIndex: 5, forceClass: '' },
+        { text: 'Isländisch', correct: false, width: 175, answerIndex: 6, forceClass: '' },
+        { text: 'Italienisch', correct: true, width: 175, answerIndex: 7, forceClass: '' },
     ]);
 
     // 'question' or 'timeline'
@@ -144,9 +144,9 @@
     const gamePhase = ref('intro'); 
     // 'question' or 'correct'
     const questionDisplayMode = ref('question');
-    const leadingText = ref('First, take a look at any exhibit. You\'ll see the text in many languages');
-    const questionText = ref('Which languages are Switzerland\’s official national languages?');
-    const largeCorrectText = ref('Correct! Four languages! But why? Well it\’s complicated...');
+    const leadingText = ref('Sieh dich in der Ausstellung um. Du erkennst die Texte in verschiedenen Sprachen.');
+    const questionText = ref('Welches sind offizielle Landessprachen?');
+    const largeCorrectText = ref('Richtig!! Aber weshalb? Es ist kompliziert...');
 
     // Timeline
     const showTimelineIntro = ref(true);
@@ -155,13 +155,13 @@
     const timelineStartCap = {
         mode: 'cap',
         data: {
-            year: '1000 AD'
+            year: '1000 n. Chr.'
         }
     };
     const timelineEndCap = {
         mode: 'cap',
         data: {
-            year: '2000 AD'
+            year: '2000 n. Chr.'
         }
     };
 
@@ -218,13 +218,13 @@
         answerQuestionPhase.value = 'question';
         questionDisplayMode.value = 'question';
 
-        const csv = eventList[currentEventIndex.value].closelookingAnswers.split(',');
+        const csv = eventList[currentEventIndex.value].closelookingAnswers.split('|');
         const shuffledCSV = [...csv];
         shuffle(shuffledCSV);
         gameQuestionAnswers.value = [];
         shuffledCSV.forEach((element, index) => {
             const answer = {
-                text: element,
+                text: element.trim(),
                 correct: element === csv[0],
                 forceClass: ''
             }

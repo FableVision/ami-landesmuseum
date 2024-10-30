@@ -13,9 +13,9 @@
     v-if="showBack"
     class="home-dialog-base">
       <div class="home-dialog-container">
-        <h1>Leave?</h1>
-        <span>You will be returned to the home page.</span>
-        <button class="confirm-button black-button home-dialog-confirm" @click="backToTitle">Exit</button>
+        <h1>Verlassen?</h1>
+        <span>Du wirst zur Startseite geleitet.</span>
+        <button class="confirm-button black-button home-dialog-confirm" @click="backToTitle">Verlassen</button>
         <button class="home-dialog-exit" @click="showBack = false">
           <img src="@/assets/png/exit.png">
         </button>

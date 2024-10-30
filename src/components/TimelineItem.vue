@@ -1,7 +1,7 @@
 <template>
     <div class="basic-vertical-flex timeline-item">
         <div v-if="mode==='cap'" class="timeline-cap-container basic-vertical-flex">
-            <span class="timeline-date"> {{ data.year }}</span>
+            <span class="timeline-date">{{ data.year }}</span>
         </div>
         <div v-if="mode==='event'" class="basic-vertical-flex" style="height: 200px;">
             <img class="timeline-picture" :src="imageSrc">

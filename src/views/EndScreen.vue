@@ -4,7 +4,7 @@
             <h1 class="timeline-complete-text">Timeline complete!</h1>
         </div>
         <div style="height: 150px;"></div>
-        <p class="timeline-end-text">So there you have it! Why are there four languages in Switzerland? Well, it’s complicated - and each of the four languages has been spoken for hundreds of years. Today Switzerland is multilingual. In addition to the four official languages, English, Portuguese and Albanian are spoken most frequently.</p>
+        <p class="timeline-end-text">Du hast es! Wieso gibt es vier Landessprachen? Es ist ganz schön kompliziert. Jede der Landessprachen wird bereits seit hunderten von Jahren gesprochen. Heute ist die Schweiz ein Vielsprachiges Land. Neben den offiziellen Landessprachen zählen Englisch, Portugisisch und Albanisch zu den meist gesprochenen Sprachen.</p>
         <div class="timeline">
             <div class="timeline-line"></div>
             <TimelineItem v-for="element in timelineItems" 
@@ -12,7 +12,7 @@
                 :data="element.data">
             </TimelineItem>
         </div>
-        <button class="confirm-button black-button" @click="router.push('/title')">Return to start</button>
+        <button class="confirm-button black-button" @click="router.push('/title')">Zurück zum Start</button>
         <div style="height: 80px;"></div>
     </div>
     <RouterView />
@@ -32,13 +32,13 @@
     const timelineStartCap = {
         mode: 'cap',
         data: {
-            year: '1000 AD'
+            year: '1000 n. Chr.'
         }
     };
     const timelineEndCap = {
         mode: 'cap',
         data: {
-            year: '2000 AD'
+            year: '2000 n. Chr.'
         }
     };
 

@@ -12,10 +12,10 @@
         <img src="@/assets/png/wrong.png">
     </div>
     <div class="main-content center-content-vertically">
-        <span>Why does Switzerland have so many languages? Well,</span>
-        <h3>it's complicated...</h3>
+        <span>Wieso gibt es in der Schweiz vier Landessprachen?</span>
+        <h3>Es ist kompliziert...</h3>
         <div style="height: 50px;"></div>
-        <button class="confirm-button black-button" @click="router.push('/game')">Begin</button>
+        <button class="confirm-button black-button" @click="router.push('/game')">Start</button>
     </div>
     <RouterView />
 </template>
