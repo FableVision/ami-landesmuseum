@@ -1,7 +1,7 @@
 <template>
     <div class="main-content">
         <div class="timeline-header">
-            <h1 class="timeline-complete-text">Timeline complete!</h1>
+            <h1 class="timeline-complete-text">Der Zeitstrahl ist komplett!</h1>
         </div>
         <div style="height: 150px;"></div>
         <p class="timeline-end-text">Du hast es! Wieso gibt es vier Landessprachen? Es ist ganz schön kompliziert. Jede der Landessprachen wird bereits seit hunderten von Jahren gesprochen. Heute ist die Schweiz ein Vielsprachiges Land. Neben den offiziellen Landessprachen zählen Englisch, Portugisisch und Albanisch zu den meist gesprochenen Sprachen.</p>
