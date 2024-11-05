@@ -376,4 +376,9 @@ span, h1, h2, h3, h4, h5, h6{
         padding: 0px 25%;
     }
     
+    .timeline-popup-text {
+        margin-top: 0.5em;
+        line-height: 1.2;
+    }
+    
 }
