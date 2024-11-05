@@ -78,7 +78,7 @@
                 <div class="home-dialog-container">
                     <h1>Zeitstrahl</h1>
                     <span>Fünf Objekte in der Ausstellung werden dir helfen, die wunderbar komplizierte Geschichte zu ordnen.
-                        <br><br>Platziere das Object auf dem Zeitstrahl und finde mehr heraus.</span>
+                        <br><br>Platziere das Objekt auf dem Zeitstrahl und finde mehr heraus.</span>
                     <button class="confirm-button black-button home-dialog-confirm" 
                         @click="showTimelineIntro=false; showTimelinePopup=true">Weiter</button>
                 </div>
