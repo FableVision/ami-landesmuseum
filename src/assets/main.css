@@ -359,3 +359,21 @@ span, h1, h2, h3, h4, h5, h6{
     text-indent: 30000px;
     pointer-events: none;
 }
+
+/* for tiny phones. feel free to change -gabby wuz here */
+@media (max-width: 450px) {
+
+    .home-dialog-container {
+        width: 300px;
+    }
+
+    .timeline-header-text-area {
+        width: 125px;
+    }
+
+    .timeline-complete-text {
+        width: 50%;
+        padding: 0px 25%;
+    }
+    
+}
