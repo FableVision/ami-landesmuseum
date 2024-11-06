@@ -8,7 +8,7 @@
         "timelineCorrectFeedback": "Richtig!! 1848 wird der Ankerpunkt der Erkundung werden. Du kannst Objekte zeitlich vorher oder nacher platzieren. ",
         "physicalDirection": "1800-1900 Raum",
         "closelookingPrompt": "Vielsprachigkeit wird in der Bundesverfassung festgelegt. Während du dir die Bundesverfassung ansiehst...in Deutsch...was war die erste deutsche Bezeichnung der Schweiz um 1848?",
-        "closelookingAnswers": "Helvetische Republik | Eichhörnchen | Schweizerische Eidgenossenschaft | Roger Federer",
+        "closelookingAnswers": "Schweizerische Eidgenossenschaft | Helvetische Republik | Eichhörnchen | Roger Federer\n",
         "closelookingFeedback": "Richtig! In Latein \"Condoederatio Helvetica\", kurz CH. Vielleicht hast dies bereits auf einem Nummernschild entdeckt. ",
         "closelookingMoreInfo": "Heute formt sich die Schweiz aus 26 verschiedenen Kantonen. Aber wie kams dazu? Und welche Sprachen kamen nach und nach dazu? Finde es heraus! "
     },
@@ -47,7 +47,7 @@
         "timelineCorrectFeedback": " ",
         "physicalDirection": "Allererster Raum der Ausstellung",
         "closelookingPrompt": "Nach der Schlacht bei Morgarten schlossen sich Uri, Schwyz und Unterwalden 1291 als Bündnispartner zusammen. Dieser Brief hier ist von 1315. Was versprechen die drei Kantone sich?",
-        "closelookingAnswers": "Gegenseitige Unterstützung | Endlose Treue | Ewiger Widerstand | Steuervergünstigungen",
+        "closelookingAnswers": "Gegenseitige Unterstützung | Endlose Treue | Ewiger Widerstand | Steuervergünstigungen ",
         "closelookingFeedback": "Fantastisch! Uri, Schwyz und Unterwalden sichern sich gegenseitige Unterstützung zu und entwickeln eine gemeinsame Haltung gegenüber umliegenden Mächten. ",
         "closelookingMoreInfo": "Die drei Orte des Bündnisses sprachen Deutsch. Der Deutschsprachige Teil der Schweiz war nie ein Teil von Deutschland. Die Schweiz als Bundesstaat ist sogar älter als der Bundersstaat Deutschland!"
     },
