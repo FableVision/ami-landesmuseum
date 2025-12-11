@@ -33,7 +33,7 @@
             </div>
             <div v-if="gamePhase==='game' && answerQuestionPhase ==='search'" class="flex-column">
                 <div style="height:25px"></div>
-                <span>Find the object in...</span>
+                <span></span>
                 <br>
                 <span><b>{{eventList[currentEventIndex].physicalDirection}}</b></span>
                 <div style="height:25px"></div>
