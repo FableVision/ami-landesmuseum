@@ -20,7 +20,8 @@ const router = createRouter({
     {
       path: '/end',
       name: 'end',
-      component: EndScreen
+      component: EndScreen,
+      props: true
     }
   ]
 })

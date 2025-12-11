@@ -187,6 +187,9 @@
         allText.forEach(question => {
             eventList.push(question);
         });
+        shuffle(eventList);
+        console.log("made", eventList);
+        
 
         buildTimeline();
     });
@@ -238,7 +241,7 @@
 
     function nextQuestion(){
         if(currentEventIndex.value === 4){
-            router.push('/end');
+            router.push({ name: 'end', state: { items: eventList }});
             return;
         }
 
@@ -268,7 +271,9 @@
 
         const idedEvents = eventList.slice(0, currentEventIndex.value);
         idedEvents.sort(dateSort);
-        console.log(idedEvents);
+        console.log("ided events:", idedEvents);
+        console.log("event list:", eventList);
+        
 
         for (let index = 0; index < idedEvents.length; index++) {
             const element = idedEvents[index];

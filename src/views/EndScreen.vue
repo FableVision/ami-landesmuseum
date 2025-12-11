@@ -19,15 +19,20 @@
   </template>
 
 <script setup>
-    import { onMounted } from 'vue';
+    import { computed, onMounted } from 'vue';
     import { RouterLink, RouterView } from 'vue-router';
-    import { useRouter } from 'vue-router';
+    import { useRouter, useRoute } from 'vue-router';
     import { ref } from 'vue';
     import allText from '../text/text.json';
     import AnswerOption from '../components/AnswerOption.vue';
     import TimelineItem from '../components/TimelineItem.vue';
 
     const router = useRouter();
+    const route = useRoute();
+    console.log("Router", router, route);
+    // const searchQuery = computed(() => route.query.q );
+    // console.log("Search query", searchQuery);
+    
 
     const timelineStartCap = {
         mode: 'cap',
@@ -54,6 +59,10 @@
     });
 
     function buildTimeline(){
+        console.log("end timeline, all text:", allText);
+        console.log("end timeline, event list:", eventList);
+        console.log("end timeline, timeline items:", timelineItems);
+        
         eventList.sort(dateSort);
 
         timelineItems.value.push(timelineStartCap);
