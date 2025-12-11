@@ -1,10 +1,10 @@
 <template>
     <div class="main-content">
         <div class="timeline-header">
-            <h1 class="timeline-complete-text">Der Zeitstrahl ist komplett!</h1>
+            <h1 class="timeline-complete-text">Timeline complete!</h1>
         </div>
         <div style="height: 150px;"></div>
-        <p class="timeline-end-text">Du hast es! Wieso gibt es vier Landessprachen? Es ist ganz schön kompliziert. Jede der Landessprachen wird bereits seit hunderten von Jahren gesprochen. Heute ist die Schweiz ein Vielsprachiges Land. Neben den offiziellen Landessprachen zählen Englisch, Portugisisch und Albanisch zu den meist gesprochenen Sprachen.</p>
+        <p class="timeline-end-text">It can be challenging to visualize just how many lives London Town has had through its history while walking through our quiet 23-acre site. We hope that this game has helped you to see London Town in a new light.</p>
         <div class="timeline">
             <div class="timeline-line"></div>
             <TimelineItem v-for="element in timelineItems" 
@@ -12,33 +12,30 @@
                 :data="element.data">
             </TimelineItem>
         </div>
-        <button class="confirm-button black-button" @click="router.push('/title')">Zurück zum Start</button>
+        <button class="confirm-button black-button" @click="router.push('/title')">Return to start</button>
         <div style="height: 80px;"></div>
     </div>
     <RouterView />
   </template>
 
 <script setup>
-    import { computed, onMounted } from 'vue';
-    import { RouterLink, RouterView } from 'vue-router';
-    import { useRouter } from 'vue-router';
-    import { ref } from 'vue';
-    import allText from '../text/text.json';
-    import AnswerOption from '../components/AnswerOption.vue';
-    import TimelineItem from '../components/TimelineItem.vue';
+    import { onMounted, ref } from 'vue';
+import { RouterView, useRouter } from 'vue-router';
+import TimelineItem from '../components/TimelineItem.vue';
+import allText from '../text/text.json';
 
     const router = useRouter();
 
     const timelineStartCap = {
         mode: 'cap',
         data: {
-            year: '1000 n. Chr.'
+            year: '1600 AD'
         }
     };
     const timelineEndCap = {
         mode: 'cap',
         data: {
-            year: '2000 n. Chr.'
+            year: '2025 AD'
         }
     };
 
@@ -47,10 +44,10 @@
 
     onMounted(()=>{
         const items = window.history.state.items;
-        console.log("Items", items);
+        // console.log("Items", items);
 
         if (items) {
-            eventList.push(...items.slice(0, 4));
+            eventList.push(...items.slice(0, 5));
         }
         else {  // fallback in case user navigates to end screen without having answered anything
             allText.forEach(question => {
@@ -62,7 +59,7 @@
     });
 
     function buildTimeline(){
-        console.log("end timeline, event list:", eventList);
+        // console.log("end timeline, event list:", eventList);
         
         eventList.sort(dateSort);
 

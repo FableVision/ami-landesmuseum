@@ -4,7 +4,7 @@
         <div v-if="view==='question'" class="flex-column">
             <div v-if="questionDisplayMode === 'correct'" class="flex-column">
                 <img class="large-correct-symbol" src="@/assets/png/check.png">
-                <h4>Richtig!</h4>
+                <h4>Correct!</h4>
             </div>
             <div v-if="gamePhase==='intro'" class="flex-column">
                 <span v-if="questionDisplayMode === 'correct'" > {{ largeCorrectText }}</span>
@@ -28,12 +28,12 @@
                 <div style="height: 50px;"></div>
                 <button v-if="questionDisplayMode==='correct'"
                     class="confirm-button white-button"
-                    @click="advance">Weiter
+                    @click="advance">Continue
                 </button>
             </div>
             <div v-if="gamePhase==='game' && answerQuestionPhase ==='search'" class="flex-column">
                 <div style="height:25px"></div>
-                <span>Finde das Objekt im...</span>
+                <span>Find the object in...</span>
                 <br>
                 <span><b>{{eventList[currentEventIndex].physicalDirection}}</b></span>
                 <div style="height:25px"></div>
@@ -41,7 +41,7 @@
                 <div style="height: 50px;"></div>
                 <button 
                     class="confirm-button white-button"
-                    @click="found">Gefunden!
+                    @click="found">Found!
                 </button>
             </div>
             <div v-if="gamePhase==='game' && answerQuestionPhase !== 'search'" class="flex-column">
@@ -62,13 +62,13 @@
                         <div style="height: 50px;"></div>
                         <button v-if="answerQuestionPhase==='correct'"
                             class="confirm-button white-button"
-                            @click="goToInfo">Weiter
+                            @click="goToInfo">Next
                         </button>
                     <div style="height: 50px;"></div>
                 </div>
                 <button v-if="answerQuestionPhase==='info'"
                     class="confirm-button white-button"
-                    @click="nextQuestion">Nächste Frage
+                    @click="nextQuestion">Next Question
                 </button>
                 </div>
             </div>
@@ -76,29 +76,29 @@
         <div v-if="view==='timeline'" class="flex-column">
             <div v-if="showTimelineIntro" class="home-dialog-base">
                 <div class="home-dialog-container">
-                    <h1>Zeitstrahl</h1>
-                    <span>Fünf Objekte in der Ausstellung werden dir helfen, die wunderbar komplizierte Geschichte zu ordnen.
-                        <br><br>Platziere das Objekt auf dem Zeitstrahl und finde mehr heraus.</span>
+                    <h1>London Town Vignettes</h1>
+                    <span>You will receive a total of five little-known events in London Town's history, each unfurling into a different London Town story. As you receive these events, you will be asked to place them in chronological order, ultimately forming a... timeline, if you will. Exact dates don't matter, all you need to worry about is whether or not an event comes before or after the other events on your screen. Use the physical timeline in front of you for hints.
+                        <br><br>The events you receive will be randomly selected from a larger pool of options, so this is a perfect game to come back to or to play with a friend!</span>
                     <button class="confirm-button black-button home-dialog-confirm" 
-                        @click="showTimelineIntro=false; showTimelinePopup=true">Weiter</button>
+                        @click="showTimelineIntro=false; showTimelinePopup=true">Continue</button>
                 </div>
             </div>
             <div v-if="!showTimelinePopup" class="timeline-header">
                 <img class="timeline-header-image" :src="'src/assets/jpg/' + eventList[currentEventIndex].thumbnailFileName">
                 <div class="timeline-header-text-area">
-                    <h5 style="text-align: left; margin: 10px 0">Runde {{ currentEventIndex + 1 }}</h5>
+                    <h5 style="text-align: left; margin: 10px 0">Round {{ currentEventIndex + 1 }}</h5>
                     <h3 style="text-align: left; margin: 10px 0;">{{ eventList[currentEventIndex].title }}</h3>
                 </div>
             </div>
             <div v-if="showTimelinePopup" class="timeline-popup-background">
                 <div class="timeline-popup-container">
-                    <h2 class="timeline-popup-round-text">Runde {{ currentEventIndex + 1 }}</h2>
+                    <h2 class="timeline-popup-round-text">Round {{ currentEventIndex + 1 }}</h2>
                     <img class="timeline-popup-img" :src="'src/assets/jpg/' + eventList[currentEventIndex].thumbnailFileName">
                     <h3 class="timeline-popup-text">{{ eventList[currentEventIndex].title }}</h3>
                     <p class="timeline-popup-text">{{ eventList[currentEventIndex].timelinePrompt }}</p>
                     <button class="confirm-button black-button timeline-popup-button"
                         @click="showTimelinePopup = false;">
-                        Platzieren
+                        Place
                     </button>
                 </div>
             </div>
@@ -128,14 +128,14 @@
     const router = useRouter();
 
     const firstQuestionOptions = ref([
-        { text: 'Schweizerdeutsch', correct: false, width: 175, answerIndex: 0, forceClass: '' },
-        { text: 'Deutsch', correct: true, width: 175, answerIndex: 1, forceClass: '' },
-        { text: 'Französisch', correct: true, width: 175, answerIndex: 2, forceClass: '' },
-        { text: 'Englisch', correct: false, width: 175, answerIndex: 3, forceClass: '' },
-        { text: 'Spanisch', correct: false, width: 175, answerIndex: 4, forceClass: '' },
-        { text: 'Rätoromanisch', correct: true, width: 175, answerIndex: 5, forceClass: '' },
-        { text: 'Isländisch', correct: false, width: 175, answerIndex: 6, forceClass: '' },
-        { text: 'Italienisch', correct: true, width: 175, answerIndex: 7, forceClass: '' },
+        { text: 'UNESCO Site of Memory for the Slave Trade', correct: true, width: 175, answerIndex: 0, forceClass: '' },
+        { text: 'Iroquois land', correct: false, width: 175, answerIndex: 1, forceClass: '' },
+        { text: 'Anne Arundel County almshouse', correct: true, width: 175, answerIndex: 2, forceClass: '' },
+        { text: 'Tobacco plantation', correct: false, width: 175, answerIndex: 3, forceClass: '' },
+        { text: 'Piscataway land', correct: true, width: 175, answerIndex: 4, forceClass: '' },
+        { text: 'Transportation and trade hub', correct: true, width: 175, answerIndex: 5, forceClass: '' },
+        { text: 'Shipyard', correct: false, width: 175, answerIndex: 6, forceClass: '' },
+        { text: 'Colonial city', correct: false, width: 175, answerIndex: 7, forceClass: '' },
     ]);
 
     // 'question' or 'timeline'
@@ -144,9 +144,9 @@
     const gamePhase = ref('intro'); 
     // 'question' or 'correct'
     const questionDisplayMode = ref('question');
-    const leadingText = ref('Sieh dich in der Ausstellung um. Du erkennst die Texte in verschiedenen Sprachen.');
-    const questionText = ref('Welches sind offizielle Landessprachen?');
-    const largeCorrectText = ref('Richtig!! Aber weshalb? Es ist kompliziert...');
+    const leadingText = ref("Let's get started. Can you guess 4 aspects of London Town's identity? Look at the timeline in front of you for some clues -- you'll have to make some guesses though!");
+    const questionText = ref('');   // empty for now
+    const largeCorrectText = ref("Correct! What is today London Town and Gardens was a place that people from all walks of life called home. Our timeline exhibit is a great place for you to go and get your basics covered, stick around if you want to know more about the people and events that bring London Town's story to life.");
 
     // Timeline
     const showTimelineIntro = ref(true);
@@ -155,13 +155,13 @@
     const timelineStartCap = {
         mode: 'cap',
         data: {
-            year: '1000 n. Chr.'
+            year: '1600 AD'
         }
     };
     const timelineEndCap = {
         mode: 'cap',
         data: {
-            year: '2000 n. Chr.'
+            year: '2025 AD'
         }
     };
 
@@ -188,8 +188,7 @@
             eventList.push(question);
         });
         shuffle(eventList);
-        console.log("made", eventList);
-        
+        // console.log("made", eventList);
 
         buildTimeline();
     });
@@ -271,9 +270,8 @@
 
         const idedEvents = eventList.slice(0, currentEventIndex.value);
         idedEvents.sort(dateSort);
-        console.log("ided events:", idedEvents);
-        console.log("event list:", eventList);
-        
+        // console.log("ided events:", idedEvents);
+        // console.log("event list:", eventList);
 
         for (let index = 0; index < idedEvents.length; index++) {
             const element = idedEvents[index];
@@ -350,10 +348,6 @@
     function delayedResponse(correct, slotIndex){
         canPlaceOnTimeline = true;
         if(correct){
-            if(currentEventIndex.value === 4){
-                eventList[4].thumbnailFileName = 'map.jpg';
-            }
-
             const displayEvent = getDisplayEvent(eventList[currentEventIndex.value]);
             displayEvent.data.correct = ''
             timelineItems.value[slotIndex] = displayEvent;

@@ -14,6 +14,8 @@ Build notes:
 - make sure to replace the favicon delivered with the build with the swiss flag one in the repo. Vue overwrites this for some reason
 - can remove the .htaccess file on the server once everything is content-complete to improve load speeds
 
+# Landesmuseum Edits
+
 Uploading content sheet:
 - Go here: https://docs.google.com/spreadsheets/d/1nM1ZI8YFJj6GgfEdif_OBIgxcIoqICMprXfXyzKCDEs/edit?gid=0#gid=0
 - Export JSON -> **Export json for this sheet** (we only need the second sheet for this, labeled "rounds")
@@ -23,3 +25,9 @@ Uploading content sheet:
 If you run into caching issues on the server, just use a new folder / url on the server and update the `npm run build` script accordingly.
 
 Place the created dist files in vhosts -> ami/landesmuseum on fvdev3
+
+# London Town Edits
+If you are editing content for londontown, you must switch to the `londontown` branch and commit your changes there.
+- The export instructions are the same as the Landesmuseum content sheet, except you can find the London Town content sheet here: https://docs.google.com/spreadsheets/d/1HXt-nGqCPoQm-s92fqVNaEcCPOT1HDpQY-0E2qpjopw/edit?usp=sharing
+
+Place the created dist files in vhost -> ami/londontown on fvdev3
