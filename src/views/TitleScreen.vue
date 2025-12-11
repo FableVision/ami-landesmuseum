@@ -1,11 +1,6 @@
 <template>
     <div class="pre-loader">
-        <img src="@/assets/jpg/1291.jpg">
-        <img src="@/assets/jpg/1481.jpg">
-        <img src="@/assets/jpg/1504.jpg">
-        <img src="@/assets/jpg/1848.jpg">
-        <img src="@/assets/jpg/1938.jpg">
-        <img src="@/assets/jpg/map.jpg">
+        <img src="@/assets/jpg/Londontown_Placeholder.jpg">
         <img src="@/assets/png/check.png">
         <img src="@/assets/png/exit.png">
         <img src="@/assets/png/home.png">
