@@ -8,7 +8,7 @@
         <img src="@/assets/jpg/soldiers.jpg">
         <img src="@/assets/jpg/taverns.jpg">
         <img src="@/assets/jpg/Tobacco.jpg">
-        <img src="@/assets/jpg/whitecamelia.jpg">
+        <img src="@/assets/jpg/whitecamellia.jpg">
         <img src="@/assets/jpg/WmBSnow.jpg">
         <img src="@/assets/png/check.png">
         <img src="@/assets/png/exit.png">
