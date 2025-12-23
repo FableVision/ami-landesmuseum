@@ -41,7 +41,7 @@
                 <div style="height: 50px;"></div>
                 <button 
                     class="confirm-button white-button"
-                    @click="found">Found!
+                    @click="found">Huzza!
                 </button>
             </div>
             <div v-if="gamePhase==='game' && answerQuestionPhase !== 'search'" class="flex-column">
@@ -77,8 +77,8 @@
             <div v-if="showTimelineIntro" class="home-dialog-base">
                 <div class="home-dialog-container">
                     <h1>London Town Vignettes</h1>
-                    <span>You will receive a total of five little-known events in London Town's history, each unfurling into a different London Town story. As you receive these events, you will be asked to place them in chronological order, ultimately forming a... timeline, if you will. Exact dates don't matter, all you need to worry about is whether or not an event comes before or after the other events on your screen. Use the physical timeline in front of you for hints.
-                        <br><br>The events you receive will be randomly selected from a larger pool of options, so this is a perfect game to come back to or to play with a friend!</span>
+                    <span>You will receive a series of little-known events in London Town's history, each unfurling into a different story. You will be asked to place these events in chronological order as you receive them, ultimately forming a... timeline, if you will. Exact dates don't matter, all you need to worry about is whether an event comes before or after the other events on your screen. 
+                        <br><br>Place the events by tapping on the red dot on the timeline. Use the physical timeline in front of you for hints.</span>
                     <button class="confirm-button black-button home-dialog-confirm" 
                         @click="showTimelineIntro=false; showTimelinePopup=true">Continue</button>
                 </div>
@@ -130,7 +130,7 @@
     const firstQuestionOptions = ref([
         { text: 'UNESCO Site of Memory for the Slave Trade', correct: true, width: 175, answerIndex: 0, forceClass: '' },
         { text: 'Iroquois land', correct: false, width: 175, answerIndex: 1, forceClass: '' },
-        { text: 'Anne Arundel County almshouse', correct: true, width: 175, answerIndex: 2, forceClass: '' },
+        { text: 'Anne Arundel County Almshouse', correct: true, width: 175, answerIndex: 2, forceClass: '' },
         { text: 'Tobacco plantation', correct: false, width: 175, answerIndex: 3, forceClass: '' },
         { text: 'Piscataway land', correct: true, width: 175, answerIndex: 4, forceClass: '' },
         { text: 'Transportation and trade hub', correct: true, width: 175, answerIndex: 5, forceClass: '' },
