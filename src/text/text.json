@@ -99,7 +99,7 @@
         "round": 9,
         "date": 1987,
         "title": "London Town and Gardens ",
-        "thumbnailFileName": "white camellia.jpg",
+        "thumbnailFileName": "whitecamellia.jpg",
         "timelinePrompt": "The four seasons garden was established at the same time London Town became a museum. The garden has been used as a test site for researching genetically modified plants to advance the field of horticulture. When was London Town selected to be a test site for camellias?",
         "timelineCorrectFeedback": "Correct! London Town was selected by William Ackerman, a geneticist from the U.S. National Arboretum, to be one of the initial field testing locations for new varieties of camellias.",
         "closelookingPrompt": "Before the 1980s, camellias would not survive the colder winters further north than Southern Maryland and Washington D.C. Today, due to the research conducted by Dr. Ackerman and other horticulturalists, camellias can survive to what temperature?",
