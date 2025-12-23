@@ -1,6 +1,15 @@
 <template>
     <div class="pre-loader">
-        <img src="@/assets/jpg/Londontown_Placeholder.jpg">
+        <img src="@/assets/jpg/convicts.jpg">
+        <img src="@/assets/jpg/Ferry.jpeg">
+        <img src="@/assets/jpg/HenryHoward.jpg">
+        <img src="@/assets/jpg/LTDig.jpg">
+        <img src="@/assets/jpg/slaveauction.jpg">
+        <img src="@/assets/jpg/soldiers.jpg">
+        <img src="@/assets/jpg/taverns.jpg">
+        <img src="@/assets/jpg/Tobacco.jpg">
+        <img src="@/assets/jpg/white camelia.jpg">
+        <img src="@/assets/jpg/WmBSnow.jpg">
         <img src="@/assets/png/check.png">
         <img src="@/assets/png/exit.png">
         <img src="@/assets/png/home.png">
