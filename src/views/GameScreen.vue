@@ -4,7 +4,7 @@
         <div v-if="view==='question'" class="flex-column">
             <div v-if="questionDisplayMode === 'correct'" class="flex-column">
                 <img class="large-correct-symbol" src="@/assets/png/check.png">
-                <h4>Correct!</h4>
+                <h4>Huzza!</h4>
             </div>
             <div v-if="gamePhase==='intro'" class="flex-column">
                 <span v-if="questionDisplayMode === 'correct'" > {{ largeCorrectText }}</span>
@@ -41,7 +41,7 @@
                 <div style="height: 50px;"></div>
                 <button 
                     class="confirm-button white-button"
-                    @click="found">Huzza!
+                    @click="found">Continue
                 </button>
             </div>
             <div v-if="gamePhase==='game' && answerQuestionPhase !== 'search'" class="flex-column">
