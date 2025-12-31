@@ -16,7 +16,7 @@
         "date": 1708,
         "title": "Taverns at London Town ",
         "thumbnailFileName": "taverns.jpg",
-        "timelinePrompt": "After Mehitable Peirpont's husband John ran away she had trouble collecting tavern debts because the tavern was in his name. She was one of London Town's first tavern keepers.  On the timeline, when did Mehitable Pierpoint go to court to get permission to collect debts that were owed to her husband?",
+        "timelinePrompt": "After Mehitable Peirpont's husband John ran away, she had trouble collecting tavern debts because the tavern was in his name. She was one of London Town's first tavern keepers.  On the timeline, when did Mehitable Pierpoint go to court to get permission to collect debts that were owed to her husband?",
         "timelineCorrectFeedback": "Right! Mehitable had been running a tavern in the area since the late 1600s, by herself and with her spouse. She received the court's permission to collect debts on behalf of her truant husband. ",
         "closelookingPrompt": "Which iconic London Town artifact do you think was NOT found at the excavation site of the Rumney/West tavern? ",
         "closelookingAnswers": "bartmann \"bearded man\" jug | a mermaid plate | spike bowl (the spike may have held fruit in place for fancy punches) | crystalline glasses ",
@@ -27,13 +27,13 @@
         "round": 3,
         "date": 1710,
         "title": "Ferry at the King's Highway",
-        "thumbnailFileName": "Ferry.jpeg",
+        "thumbnailFileName": "Ferry.jpg",
         "timelinePrompt": "Being the official Ferry Master for London Town was a coveted position and allowed the holder a lucrative and steady stream of income. After the death of her husband David, Alice Macklefish applied for the Ferry Master license. What date on the timeline does it show Alice applying for the Ferry Master license?",
         "timelineCorrectFeedback": "Correct! The ferry license, while not passed down to family members, was often applied for and kept within a family. Alice applied for it after the death of David, but then her second husband applied for it--and again after the second husband's death she obtains the ferry license.",
         "closelookingPrompt": "A vital part of London Town was its role in the King's Highway--which connected the colonies from Charleston, South Carolina to Boston, Massachusetts. London Town was home to the South River Ferry which allowed people, live stock and supplies to cross to and fro. What lead to the demise of the South River Ferry?",
         "closelookingAnswers": "A bridge was built across the South River | The ferry boat sank to the bottom of the South River | No one wanted the ferry license anymore | The invention of cars made the ferry obsolete ",
         "closelookingFeedback": "That's right! In 1872 a bridge was built about a mile away from original town limits; thus ending the site's relevance as a ferry-based transportation hub.",
-        "closelookingMoreInfo": "Although no trace of the ferry remains today, when you walk along the path that leads from the Carpenter Shop to the William Brown House, the valley on the other side of the fence used to be Scott street, the part of the King's Highway which deadended into the South River Ferry. "
+        "closelookingMoreInfo": "Although no trace of the ferry remains today, when you walk along the path that leads from the Carpenter Shop to the William Brown House, the valley on the other side of the fence used to be Scott street, the part of the King's Highway which dead-ended into the South River Ferry. "
     },
     {
         "round": 4,
@@ -42,9 +42,9 @@
         "thumbnailFileName": "slaveauction.jpg",
         "timelinePrompt": "London Town is a UNESCO Site of Memory for the slave trade. When do you think the last ship carrying enslaved people landed in London Town?",
         "timelineCorrectFeedback": "Yes, the Jenny was the last of twenty slave ships that sailed into London Town from 1708 to 1760. Most of these ships were not buying and selling people in town, but taking on tobacco after unloading their cargo elsewhere. There are four well-documented ships that held auctions here, with a few more examples probable. Those sold here numbered at least in the hundreds, perhaps over a thousand. ",
-        "closelookingPrompt": "The last  slave ship to dock at London Town is also the best documented. It made newspapers as far north as Boston. What made the voyage of the Jenny remarkable? ",
+        "closelookingPrompt": "The last slave ship to dock at London Town is also the best documented. It made newspapers as far north as Boston. What made the voyage of the Jenny remarkable? ",
         "closelookingAnswers": "The crew unshackled and armed several enslaved men to fight off French privateers | There was a successful uprising on board the ship and the crew was overthrown by their captives | The crew kidnapped several religious leaders causing a diplomatic incident with Angola | The Jenny carried the ancestor of prominent abolitionist Frederick Douglas",
-        "closelookingFeedback": "Yes, according to the newspaper article, after the attack was over, the men returned their weapons and went back into the hold. The only accounts of this that are available are entirely from the enslaver's perspective. No record has been found from the enstaved perspective of this event. ",
+        "closelookingFeedback": "Yes, according to the newspaper article, after the attack was over, the men returned their weapons and went back into the hold. The only accounts of this that are available are entirely from the enslaver's perspective. No record has been found from the enslaved perspective of this event. ",
         "closelookingMoreInfo": "London Town historian, Michelle Kerns, has estimated that enslaved people made up almost 60% of London Town's population by 1776. "
     },
     {
@@ -52,12 +52,12 @@
         "date": 1751,
         "title": "Serving Time: Convict Labor and London Town",
         "thumbnailFileName": "convicts.jpg",
-        "timelinePrompt": "The Transportation Act of 1718 made forced service in the colonies a common punishment for British convicts. When do you think two convict servants, Thomas Bavin and John Connor escaped and spent a summer terrorizing the South River area as highwaymen?",
+        "timelinePrompt": "The Transportation Act of 1718 made forced service in the colonies a common punishment for British convicts. When do you think two convict servants, Thomas Bavin and John Connor, escaped and spent a summer terrorizing the South River area as highwaymen?",
         "timelineCorrectFeedback": "Yes! After several break-ins and armed robberies, on July 17, 1751 the Maryland Gazette writes that they \"have done so many Villainies that the travelling the Road, except in Companies and with Arms, seems unsafe, and People are afraid of coming to Market.\"",
         "closelookingPrompt": "Convict labor was common in Maryland, and in London Town. In 1762, convict servant Mary Jones was taken to court by William Brown for what offense?",
         "closelookingAnswers": "getting pregnant while in his service | attempting to run away | failure to go regularly to church | neglect of her duties",
         "closelookingFeedback": "Mary Jones was found guilty, and ordered to serve three additional years on top of her seven year sentence, as well as pay a fine. Brown's argument was that, since Mary Jones was part of his household and did not earn a wage from him, the expense and care of the child would fall to him, and thus he deserved compensation. Convict servants were not allowed to marry or start families until their service was up. ",
-        "closelookingMoreInfo": "Brown had four more male convict servants, all of whom ran away at some point during their sentence. Penalties for running away were steep--which then begs the question, what was it like to work for WIlliam Brown?"
+        "closelookingMoreInfo": "Brown had four more male convict servants, all of whom ran away at some point during their sentence. Penalties for running away were steep--which then begs the question, what was it like to work for William Brown?"
     },
     {
         "round": 6,
@@ -66,7 +66,7 @@
         "thumbnailFileName": "WmBSnow.jpg",
         "timelinePrompt": "During the American Revolution, concern over a British invasion of Annapolis prompted the removal of state papers from Annapolis to Upper Marlboro. William Brown's tavern is specifically mentioned as a stopping point as the papers made their way inland, with an armed guard. When do you think the papers were here?",
         "timelineCorrectFeedback": "Yes. Although British were in the Chesapeake Bay several times over the course of the Revolution, the British always had other targets, and no attempted invasion of Annapolis took place. ",
-        "closelookingPrompt": "William Brown was not the only London Town patriot. One London Town citizen, 21-year old Andrew Ferguson joined a Maryland regiment that would later go on to make a name for themselves at the Battle of Brooklyn as the Maryland 400. Guess another name for this famous regiment. ",
+        "closelookingPrompt": "William Brown was not the only London Town patriot. One London Town citizen, 21-year old Andrew Ferguson, joined a Maryland regiment that would later go on to make a name for themselves at the Battle of Brooklyn as the Maryland 400. Guess another name for this famous regiment. ",
         "closelookingAnswers": "First Regiment | Fifth Regiment | Second Regiment | Third Regiment",
         "closelookingFeedback": "The First Regiment earned its fame by repeatedly charging the British in order to give the rest of Washington's soldier's a chance to retreat. All but twelve were killed or captured, causing Washington to exclaim \"Good God! What brave fellows I must this day lose!”",
         "closelookingMoreInfo": "Though Andrew Ferguson survived the the day, he ultimately did not survive the war. The will he wrote upon enlisting left everything to his eleven-year old sister Elizabeth.  "
@@ -88,7 +88,7 @@
         "date": 1908,
         "title": "From Tavern to Almshouse",
         "thumbnailFileName": "HenryHoward.jpg",
-        "timelinePrompt": "The brick tavern served as the Anne Arundel County Almshouse from 1823-1965. Underserved and underfunded it came under fire during America's Progressive Era. When do you think it was described as  \"filthy,\" \"thoroughly inadequate\" and \"with no thought to morality\"?",
+        "timelinePrompt": "The brick tavern served as the Anne Arundel County Almshouse from 1823-1965. Underserved and underfunded, it came under fire during America's Progressive Era. When do you think it was described as  \"filthy,\" \"thoroughly inadequate,\" and \"with no thought to morality?\"",
         "timelineCorrectFeedback": "That's right. Many such reports in the late 1800s and early 1900s criticized the Almshouse for subpar conditions. This particular complaint comes from the Twenty-Third Report of the Lunacy Commission, and was part of a larger public service movement to get mentally ill people out of almshouses and into specialized facilities. ",
         "closelookingPrompt": "Many Almshouse residents were older people who had become unable to support themselves. One such resident was a 90-year old Black man named Henry Howard. Based off of the picture of his obituary, what was his listed profession?",
         "closelookingAnswers": "herb doctor | restaurant owner | teacher | factory worker",
@@ -105,7 +105,7 @@
         "closelookingPrompt": "Before the 1980s, camellias would not survive the colder winters further north than Southern Maryland and Washington D.C. Today, due to the research conducted by Dr. Ackerman and other horticulturalists, camellias can survive to what temperature?",
         "closelookingAnswers": "-15 °F | 0 °F | 20 °F | -45 °F",
         "closelookingFeedback": "Correct! Cold-hardy camellias will thrive in harsh winters in Wisconsin, Ontario, and even Norway!",
-        "closelookingMoreInfo": "Although no trace of the ferry remains today, when you walk along the path that leads from the Carpenter Shop to the William Brown House, the valley on the other side of the fence used to be Scott street, the part of the King's Highway which dead-ended into the South River Ferry. "
+        "closelookingMoreInfo": "While walking though the gardens, you will be able to find some of the cold-hardy camellias in bloom from October to April. Some of the hybrid varieties include Londontowne Blush, Snow Flurry, Winter's Hope, Winter's Rose, Londontown, and Pink Icicle."
     },
     {
         "round": 10,
@@ -117,6 +117,6 @@
         "closelookingPrompt": "How many buildings do you think archaeologists found evidence for on site? Do not include the brick tavern in your count, as that has always remained above ground. ",
         "closelookingAnswers": "Four | Fifteen | Two | Five",
         "closelookingFeedback": "Yes, although only the Tenement House and Carpenter Shop have been reconstructed, archaeologists also found evidence for an early 1700s tavern and the 19th century Black Dormitory from the Almshouse.",
-        "closelookingMoreInfo": "Archaeologists began to excavate London Town in the 90s, with the founding of the Lost Towns project, an Anne Arundel County initiative that targeted sites with known colonial history. When did archaeologists find the remains of a small child buried at the site of what once was Stephen West's 1720s tobacco warehouse? "
+        "closelookingMoreInfo": "Archaeologists still periodically conduct digs on London Town today, and as of 2025, Anne Arundel County's Archaeology Lab is located right next to our visitor's center. Check out their website for ways to volunteer!"
     }
 ]

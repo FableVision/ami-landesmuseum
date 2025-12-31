@@ -1,7 +1,7 @@
 <template>
     <div class="pre-loader">
         <img src="@/assets/jpg/convicts.jpg">
-        <img src="@/assets/jpg/Ferry.jpeg">
+        <img src="@/assets/jpg/Ferry.jpg">
         <img src="@/assets/jpg/HenryHoward.jpg">
         <img src="@/assets/jpg/LTDig.jpg">
         <img src="@/assets/jpg/slaveauction.jpg">
